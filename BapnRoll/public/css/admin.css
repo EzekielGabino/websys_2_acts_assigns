@@ -1,0 +1,717 @@
+
+.nav-link.active {
+    font-weight: bold;
+    color: #ffb7a5 !important;
+    border-bottom: 2px solid #ffb7a5;
+}
+
+.custom-navbar {
+    background-color: #2F2F2F; /* dark grey */
+}
+
+.navbar-brand img {
+    border-radius: 10px;
+}
+
+.nav-link {
+    color: #F5F5F5 !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #FFB7A5 !important;
+}
+
+.nav-link.active {
+    color: #FFB7A5 !important;
+    border-bottom: 2px solid #FFB7A5;
+}
+
+.btn-peach {
+    background-color: #FFB7A5;
+    color: white;
+    border: none;
+}
+
+.btn-peach:hover {
+    background-color: #FF9A8C;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: #FFE5DF;
+    color: #2F2F2F;
+    font-weight: bold;
+}
+
+/* ── Utility ── */
+.text-peach {
+    color: #FFB7A5;
+}
+
+/* ── Dashboard tables ── */
+.dashboard-table {
+    border-collapse: collapse;
+}
+
+.dashboard-table tr {
+    border-bottom: 0.5px solid #f5ede9;
+}
+
+.dashboard-table tr:last-child {
+    border-bottom: none;
+}
+
+.dashboard-table td {
+    padding: 10px 12px;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #444;
+}
+
+.thumb-cell {
+    width: 62px;
+}
+
+.product-thumb-img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.product-name {
+    font-weight: 500;
+    color: #2F2F2F;
+    font-size: 13px;
+}
+
+.product-cat {
+    font-size: 12px;
+    color: #999;
+}
+
+.stock-badge {
+    background-color: #fff3f0;
+    color: #FF7A5C;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+/* ── Sales filter ── */
+.filter-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.filter-select {
+    border: 0.5px solid #ddd;
+    border-radius: 8px;
+    padding: 7px 12px;
+    font-size: 13px;
+    color: #333;
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter-select:focus {
+    border-color: #FFB7A5;
+    box-shadow: 0 0 0 2px rgba(255,183,165,0.25);
+}
+
+.sales-month {
+    font-size: 15px;
+    font-weight: 500;
+    color: #FF9A8C;
+    margin-bottom: 4px;
+}
+
+.sales-amount {
+    font-size: 22px;
+    font-weight: 500;
+    color: #FF7A5C;
+}
+
+/* ── Products page layout ── */
+.products-page {
+    display: grid;
+    grid-template-columns: 160px 1fr 230px;
+    min-height: calc(100vh - 60px);
+}
+
+.products-sidebar {
+    background: #fff;
+    border-right: 0.5px solid #edddd8;
+    padding: 20px 14px;
+}
+
+.products-main {
+    padding: 20px;
+    background: #f5f2f0;
+}
+
+.order-panel {
+    background: #fff;
+    border-left: 0.5px solid #edddd8;
+    padding: 20px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ── Sidebar ── */
+.sidebar-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+}
+
+.cat-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 4px;
+    transition: 0.2s;
+}
+
+.cat-item:hover {
+    background: #f9f0ed;
+    color: #FF7A5C;
+}
+
+.cat-item.active {
+    background: #FFE5DF;
+    color: #FF7A5C;
+    font-weight: 500;
+}
+
+/* ── Topbar ── */
+.products-topbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.topbar-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #2F2F2F;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.btn-outline-peach {
+    background: #fff;
+    color: #FF9A8C;
+    border: 0.5px solid #FFB7A5;
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.2s;
+}
+
+.btn-outline-peach:hover {
+    background: #FFE5DF;
+    color: #FF7A5C;
+}
+
+/* ── Product cards grid ── */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+    gap: 12px;
+}
+
+.prod-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    overflow: hidden;
+}
+
+.prod-img-wrap {
+    width: 100%;
+    height: 110px;
+    background: #FFE5DF;
+    overflow: hidden;
+}
+
+.prod-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prod-body {
+    padding: 10px;
+}
+
+.prod-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: #2F2F2F;
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.prod-price {
+    font-size: 13px;
+    color: #FF9A8C;
+    margin-bottom: 4px;
+}
+
+.prod-meta {
+    font-size: 11px;
+    color: #aaa;
+    margin-bottom: 6px;
+}
+
+.stock-badge {
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.stock-low {
+    background: #fff3f0;
+    color: #FF7A5C;
+}
+
+.stock-out {
+    background: #ffeaea;
+    color: #d93025;
+}
+
+/* ── Product action buttons ── */
+.prod-actions {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.act-btn {
+    border: none;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.act-edit {
+    background: #fff8e1;
+    color: #c47d00;
+}
+
+.act-edit:hover {
+    background: #ffedb3;
+}
+
+.act-del {
+    background: #ffeaea;
+    color: #d93025;
+}
+
+.act-del:hover {
+    background: #ffd0d0;
+}
+
+.act-add {
+    background: #e6f4ea;
+    color: #2e7d32;
+}
+
+.act-add:hover {
+    background: #c8e6c9;
+}
+
+/* ── Order panel ── */
+.order-item {
+    background: #fdf6f4;
+    border-radius: 8px;
+    padding: 10px;
+    border: 0.5px solid #edddd8;
+}
+
+.order-item-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: #2F2F2F;
+    margin-bottom: 6px;
+}
+
+.order-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 3px;
+}
+
+.order-row span:last-child {
+    color: #444;
+    font-weight: 500;
+}
+
+.order-divider {
+    border: none;
+    border-top: 0.5px solid #edddd8;
+    margin: 4px 0;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2F2F2F;
+    margin-bottom: 4px;
+}
+
+.btn-checkout {
+    background: #FFB7A5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 9px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.btn-checkout:hover {
+    background: #FF9A8C;
+}
+
+.btn-cancel {
+    background: #fff;
+    color: #d93025;
+    border: 0.5px solid #f4c1c1;
+    border-radius: 8px;
+    padding: 7px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.btn-cancel:hover {
+    background: #ffeaea;
+}
+
+.empty-order {
+    color: #ccc;
+    font-size: 13px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* ── Modal submit button ── */
+.btn-peach-modal {
+    background: #FFB7A5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-peach-modal:hover {
+    background: #FF9A8C;
+}
+
+/* ── Orders page layout ── */
+.orders-page {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    min-height: calc(100vh - 60px);
+}
+
+/* ── Status dots (sidebar) ── */
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.dot-pending   { background: #f4a62a; }
+.dot-completed { background: #4caf7d; }
+.dot-cancelled { background: #e05252; }
+
+/* ── Page title ── */
+.main-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #2F2F2F;
+    margin-bottom: 16px;
+}
+
+/* ── Orders list ── */
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ── Order card ── */
+.order-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    overflow: hidden;
+}
+
+.order-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 0.5px solid #f5ede9;
+}
+
+.order-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.order-num {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2F2F2F;
+}
+
+.order-user {
+    font-size: 12px;
+    color: #aaa;
+}
+
+/* ── Status badges ── */
+.status-badge {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.badge-pending   { background: #fff8e1; color: #c47d00; }
+.badge-completed { background: #e6f4ea; color: #2e7d32; }
+.badge-cancelled { background: #ffeaea; color: #d93025; }
+
+/* ── Order card body ── */
+.order-card-body {
+    padding: 12px 16px;
+}
+
+/* ── Items table ── */
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 12px;
+}
+
+.items-table th {
+    font-size: 11px;
+    color: #aaa;
+    font-weight: 500;
+    text-align: left;
+    padding: 0 6px 8px 0;
+    border-bottom: 0.5px solid #f5ede9;
+}
+
+.items-table td {
+    font-size: 13px;
+    color: #444;
+    padding: 8px 6px 8px 0;
+    border-bottom: 0.5px solid #f9f3f0;
+}
+
+.items-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.items-table .text-end {
+    text-align: right;
+}
+
+/* ── Order footer ── */
+.order-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 0.5px solid #f5ede9;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.order-total {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2F2F2F;
+}
+
+.order-total span {
+    color: #FF9A8C;
+}
+
+.order-btns {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+/* ── Order action buttons ── */
+.btn-order {
+    border: none;
+    border-radius: 7px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-done {
+    background: #e6f4ea;
+    color: #2e7d32;
+}
+
+.btn-done:hover {
+    background: #c8e6c9;
+}
+
+.btn-cancel-ord {
+    background: #fff3f0;
+    color: #FF7A5C;
+}
+
+.btn-cancel-ord:hover {
+    background: #FFE5DF;
+}
+
+.btn-delete {
+    background: #ffeaea;
+    color: #d93025;
+}
+
+.btn-delete:hover {
+    background: #ffd0d0;
+}
+
+/* ── Users table ── */
+.users-table-wrap {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    overflow: hidden;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table thead th {
+    font-size: 11px;
+    font-weight: 500;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 12px 16px;
+    border-bottom: 0.5px solid #f5ede9;
+    text-align: left;
+}
+
+.users-table tbody tr {
+    border-bottom: 0.5px solid #f9f3f0;
+    transition: background 0.15s;
+}
+
+.users-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.users-table tbody tr:hover {
+    background: #fdf9f8;
+}
+
+.users-table td {
+    padding: 12px 16px;
+    font-size: 13px;
+    color: #444;
+    vertical-align: middle;
+}
+
+/* ── User avatar ── */
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #FFE5DF;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #FF9A8C;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.username {
+    font-weight: 500;
+    color: #2F2F2F;
+    vertical-align: middle;
+}
+
+/* ── Role badges ── */
+.role-badge {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.role-admin   { background: #FFE5DF; color: #FF7A5C; }
+.role-manager { background: #fff8e1; color: #c47d00; }
+.role-staff   { background: #e6f4ea; color: #2e7d32; }

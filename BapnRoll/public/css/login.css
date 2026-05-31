@@ -1,0 +1,30 @@
+body {
+    background-color: #f5f2f0; /* light grey */
+}
+.login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    background-color: #ffe5d9; /* soft peach */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.login-container h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+.login-container button {
+    background-color: #ffad9b; /* peach button */
+    border: none;
+}
+.login-container button:hover {
+    background-color: #ff9275;
+}
+.credentials {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 20px;
+}
+.credentials span {
+    display: block;
+}
